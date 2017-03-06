@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystals Collector</title>
+	<!-- Added link to the jQuery Library -->
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="jumbotron">
+  		<h2>Crystal Collectors</h2>
+  			<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+	</div>
+
+	<div id="instructions">
+		<p>
+			This is the Instructions Section
+		</p>
+	</div>
+
+	<div id ="targetNumber"></div>
+
+
+	<div class="btn-group" role="group" aria-label="...">
+	  <button id="crystal1" type="button" class="btn btn-default">Crystal 1</button>
+	  <button id="crystal2" type="button" class="btn btn-default">Crystal 2</button>
+	  <button id="crystal3" type="button" class="btn btn-default">Crystal 3</button>
+	  <button id="crystal4" type="button" class="btn btn-default">Crystal 4</button>	
+	</div>
+
+	<div id="yourTotal"></div>
+
+<script type="text/javascript">
+
+var c1 = 0;
+var c2 = 0;
+var c3 = 0;
+var c4 = 0;
+
+$(document).ready(function randomNum() {
+
+	var random = Math.floor(Math.random() * 102) + 19;
+	$("#targetNumber").html(random);
+});
+	
+function randomCrystalNum(){
+	
+	var random2 = Math.floor(Math.random() * 12) + 1;	
+	return random2;	
+
+}
+	c1 = randomCrystalNum();
+	c2 = randomCrystalNum();
+	c3 = randomCrystalNum();
+	c4 = randomCrystalNum();
+
+var total = 0;
+$("#yourTotal").html("Your total is: " + total);
+
+	$("#crystal1").on("click", function(){
+	total = total + c1;
+	console.log(c1);
+	$("#yourTotal").html("Your total is: " + total);
+	});
+	$("#crystal2").on("click", function(){
+	total = total + c2;
+	console.log(c2);
+	$("#yourTotal").html("Your total is: " + total);
+	});
+	$("#crystal3").on("click", function(){
+	total = total + c3;
+	console.log(c3);
+	$("#yourTotal").html("Your total is: " + total);
+	});
+	$("#crystal4").on("click", function(){
+	total = total + c4;
+	console.log(c4);
+	$("#yourTotal").html("Your total is: " + total);
+	});
+
+
+
+
+</script>
+	
+</body>
+</html>
