@@ -1,0 +1,41 @@
+body{
+	background-image: url("../images/background.jpg");
+	}
+
+.container{
+    float: none;
+    margin: 0 auto;
+}
+
+#title{
+	background-color: #D2691E;
+	color: white;
+	padding: 1%;
+}
+
+#secondRow{
+	margin-bottom: 15px;
+}
+
+#target{
+	background-color: #3CB371;
+	color: white;
+	padding: 3%;
+}
+
+#score{
+	background-color: #00CED1;
+	padding: 1.5%;
+}
+#crystal1{
+	background-image: url("../images/crystal1.jpg");
+}
+#crystal2{
+	background-image: url("../images/crystal2.jpg");
+}
+#crystal3{
+	background-image: url("../images/crystal3.jpg");
+}
+#crystal4{
+	background-image: url("../images/crystal4.jpg");
+}
